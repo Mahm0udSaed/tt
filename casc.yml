@@ -20,9 +20,6 @@ jobs:
   - script: >
       pipelineJob('maven-pipeline-version-controlled') {
           definition {
-              triggers {
-                  cron('H/5 * * * *')
-              }
               cpsScm {
                   scm {
                     git {
