@@ -1,27 +1,13 @@
 jenkins:
   systemMessage: "Controlled by Configuration as Code"
-unclassified:
-  shell:
-    shell: "bash"
-  ansibleTowerGlobalConfig:
-    towerInstallation:
-      - enableDebugging: true
-        towerCredentialsId: ansible-tower-jenkins-user  # create these by hand in jenkins
-        towerDisplayName: Infra-Ansible-Tower-01
-        towerTrustCert: true
-        towerURL: https://infra-ansible.example.com
-globalLibraries:
-    libraries:
-      - defaultVersion: "master"
-        name: "satqe_pipeline_lib"
-        retriever:
-          modernSCM:
-            scm:
-              git:
-                
-                remote: "https://github.com/mkrzyzanowski/blog-001.git"
-                traits:
-                - "gitBranchDiscovery"
-#                  - branchDiscoveryTrait:
-#                      strategyId: 1
+jobs:
+  - script: >
+        multibranchPipelineJob('configuration-as-code') {
+        branchSources {
+                git {
+               
+                remote('https://github.com/mkrzyzanowski/blog-001.git')
+                }
+      }
+}
 
