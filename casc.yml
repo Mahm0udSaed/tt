@@ -7,6 +7,7 @@ jobs:
                 git {
                
                 remote('https://github.com/mkrzyzanowski/blog-001.git')
+                branch '*/docker-for-mac'
                 }
       }
 }
