@@ -15,7 +15,24 @@ unclassified:
                 traits:
                 - "gitBranchDiscovery"
 #                  - branchDiscoveryTrait:
-#                      strategyId: 1        
+#                      strategyId: 1     
+jobs:
+  - script: >
+      pipelineJob('pipeline') {
+          definition {
+              cpsScm {
+                  scriptPath 'Jenkinsfile'
+                  scm {
+                    git {
+                        remote { url 'https://github.com/mkrzyzanowski/blog-001.git' }
+                        branch '*/docker-for-mac'
+                        extensions {}
+                    }
+                  }
+              }
+          }
+      }
+
 
 
 
