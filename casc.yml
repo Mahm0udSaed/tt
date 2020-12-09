@@ -12,7 +12,7 @@ unclassified:
             scm:
               git:
                 id: "f999d5d7-36af-47d1-95eb-9528eeb2e828"
-                remote: "https://gitlab.example.com/satelliteqe/satelliteqe-jenkins.git"
+                remote: "https://github.com/mkrzyzanowski/blog-001.git"
                 traits:
                 - "gitBranchDiscovery"
 #                  - branchDiscoveryTrait:
