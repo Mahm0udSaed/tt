@@ -2,7 +2,7 @@ jenkins:
   systemMessage: "Controlled by Configuration as Code"
 jobs:
   - script: >
-      pipelineJob('pipeline') {
+      multibranchPipelineJob('pipeline') {
           definition {
               cpsScm {
                   scriptPath 'Jenkinsfile'
