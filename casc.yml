@@ -6,7 +6,7 @@ jobs:
       pipelineJob('pipeline') {
           definition {
               
-                  scriptPath 'Jenkinsfile'
+                  
                   scm {
                     git {
                         remote { url 'https://github.com/mkrzyzanowski/blog-001.git' }
