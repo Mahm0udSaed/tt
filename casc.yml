@@ -9,8 +9,7 @@ jobs:
                   scm {
                     git {
                         remote { url 'https://github.com/mkrzyzanowski/blog-001.git' }
-                        branch '*/docker-for-mac'
-                        extensions {}
+                       
                     }
                   }
               }
