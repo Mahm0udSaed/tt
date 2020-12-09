@@ -1,24 +1,15 @@
 jenkins:
   systemMessage: "Controlled by Configuration as Code"
-
 jobs:
   - script: >
-      pipelineJob('pipeline') {
-          definition {
-              
-                  
-                  scm {
-                    git {
-                        remote { url 'https://github.com/mkrzyzanowski/blog-001.git' }
-                        branch '*/docker-for-mac'
-                        extensions {}
-                    }
-                  }
-              
-          }
+        multibranchPipelineJob('configuration-as-code') {
+        branchSources {
+                git {
+                id = 'configuration-as-code'
+                remote('https://github.com/jenkinsci/configuration-as-code-plugin.git')
+                }
       }
-
-  
+}  
 unclassified:
   shell:
     shell: "bash"
