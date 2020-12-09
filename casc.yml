@@ -5,7 +5,6 @@ jobs:
         multibranchPipelineJob('configuration-as-code') {
         branchSources {
                 git {
-                id = 'configuration-as-code'
                 remote('https://github.com/mkrzyzanowski/blog-001.git')
                 }
       }
