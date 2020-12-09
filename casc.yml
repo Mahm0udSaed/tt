@@ -16,6 +16,22 @@ jobs:
               }
           }
       }
+unclassified:
+  shell:
+    shell: "bash"
+  globalLibraries:
+    libraries:
+      - defaultVersion: "master"
+        name: "satqe_pipeline_lib"
+        retriever:
+          modernSCM:
+            scm:
+              git:
+                remote: "https://github.com/tsundberg/maven-build-with-jenkins-pipeline.git"
+                traits:
+                - "gitBranchDiscovery"
+#                  - branchDiscoveryTrait:
+#                      strategyId: 1        
 
 
 
