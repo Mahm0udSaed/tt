@@ -17,14 +17,5 @@ unclassified:
                 - "gitBranchDiscovery"
 #                  - branchDiscoveryTrait:
 #                      strategyId: 1  
-jobs:
-  - script: >
-        multibranchPipelineJob('configuration-as-code') {
-        branchSources {
-                git {
-               
-                remote('https://github.com/mkrzyzanowski/blog-001.git')
-                }
-      }
-}
+
 
