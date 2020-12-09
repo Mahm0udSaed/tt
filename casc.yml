@@ -1,6 +1,7 @@
 jenkins:
   systemMessage: "Controlled by Configuration as Code"
-  unclassified:
+
+unclassified:
   shell:
     shell: "bash"
   ansibleTowerGlobalConfig:
@@ -10,7 +11,7 @@ jenkins:
         towerDisplayName: Infra-Ansible-Tower-01
         towerTrustCert: true
         towerURL: https://infra-ansible.example.com
-  globalLibraries:
+globalLibraries:
     libraries:
       - defaultVersion: "master"
         name: "satqe_pipeline_lib"
