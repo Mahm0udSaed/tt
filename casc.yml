@@ -3,15 +3,10 @@ jenkins:
 jobs:
   - script: >
       multibranchPipelineJob('pipeline') {
-          definition {
-              cpsScm {
-                  scriptPath 'Jenkinsfile'
-                  scm {
-                    git {
-                        remote ('https://github.com/mkrzyzanowski/blog-001.git' )
-                       
-                    }
-                  }
+         branchSources {
+              git {
+                  
+                  remote('https://github.com/mkrzyzanowski/blog-001.git')
               }
           }
       }
