@@ -15,7 +15,7 @@ unclassified:
   globalLibraries:
     libraries:
       - defaultVersion: "master"
-        name: "blog-001"
+        name: "satqe_pipeline_lib"
         retriever:
           modernSCM:
             scm:
