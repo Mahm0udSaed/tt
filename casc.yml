@@ -9,21 +9,6 @@ jobs:
                 }
       }
 }  
-unclassified:
-  shell:
-    shell: "bash"
-  globalLibraries:
-    libraries:
-      - defaultVersion: "master"
-        name: "satqe_pipeline_lib"
-        retriever:
-          modernSCM:
-            scm:
-              git:
-                remote: "https://github.com/mkrzyzanowski/blog-001.git"
-                traits:
-                - "gitBranchDiscovery"
-#                  - branchDiscoveryTrait:
-#                      strategyId: 1  
+
 
 
