@@ -9,6 +9,22 @@ jobs:
                 }
       }
 }  
+unclassified:
+  shell:
+    shell: "bash"
+  globalLibraries:
+    libraries:
+      - defaultVersion: "master"
+        name: "blog-001"
+        retriever:
+          modernSCM:
+            scm:
+              git:
+                remote: "https://github.com/mkrzyzanowski/blog-001.git"
+                traits:
+                - "gitBranchDiscovery"
+#                  - branchDiscoveryTrait:
+#                      strategyId: 1  
 
 
 
