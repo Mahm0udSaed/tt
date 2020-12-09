@@ -8,7 +8,7 @@ jobs:
                   scriptPath 'Jenkinsfile'
                   scm {
                     git {
-                        remote (url 'https://github.com/mkrzyzanowski/blog-001.git' )
+                        remote ('https://github.com/mkrzyzanowski/blog-001.git' )
                        
                     }
                   }
