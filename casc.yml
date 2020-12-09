@@ -16,21 +16,6 @@ unclassified:
                 - "gitBranchDiscovery"
 #                  - branchDiscoveryTrait:
 #                      strategyId: 1        
-jobs:
-  - script: >
-      pipelineJob('maven-pipeline-version-controlled') {
-          definition {
-              cpsScm {
-                  scm {
-                    git {
-                        remote { url 'https://github.com/tsundberg/maven-build-with-jenkins-pipeline.git' }
-                        branch '*/master'
-                        extensions {}
-                    }
-                  }
-                  scriptPath 'src/ci/Jenkinsfile'
-              }
-          }
-      }
+
 
 
