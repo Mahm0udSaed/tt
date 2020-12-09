@@ -1,7 +1,7 @@
 jenkins:
   systemMessage: "Controlled by Configuration as Code"
 
-unclassified:
+unclassified:  
   shell:
     shell: "bash"
   ansibleTowerGlobalConfig:
