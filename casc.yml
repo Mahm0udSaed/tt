@@ -17,15 +17,6 @@ jobs:
           }
       }  
 unclassified:
-  shell:
-    shell: "bash"
-  ansibleTowerGlobalConfig:
-    towerInstallation:
-      - enableDebugging: true
-        towerCredentialsId: ansible-tower-jenkins-user  # create these by hand in jenkins
-        towerDisplayName: Infra-Ansible-Tower-01
-        towerTrustCert: true
-        towerURL: https://infra-ansible.example.com
   globalLibraries:
     libraries:
       - defaultVersion: "master"
