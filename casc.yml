@@ -13,17 +13,18 @@ unclassified:
               git:
                 remote: "https://github.com/mkrzyzanowski/blog-001.git"
                 traits:
-                - "gitBranchDiscovery"    
+                - "gitBranchDiscovery"
+jenkins:
+  systemMessage: "Configuration as Code"                
 jobs:
   - script: >
-      multibranchPipelineJob('configuration-as-code') {
-        branchSources {
-                git {
-                id = 'configuration-as-code'
-                remote('https://github.com/mkrzyzanowski/blog-001.git')
-                }
-      }
-}                 
+      multibranchPipelineJob('example') {
+       branchSources {
+        git {
+            remote('https://github.com/jenkinsci/job-dsl-plugin.git')
+        }
+    }
+} 
 tool:
   git:
     installations:
