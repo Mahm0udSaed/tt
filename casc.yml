@@ -17,6 +17,8 @@ jobs:
           }
       }  
 unclassified:
+  shell:
+    shell: "bash"
   globalLibraries:
     libraries:
       - defaultVersion: "master"
