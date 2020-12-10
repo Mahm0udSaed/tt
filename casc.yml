@@ -11,21 +11,21 @@ unclassified:
           modernSCM:
             scm:
               git:
-                remote: "https://github.com/jenkinsci/configuration-as-code-plugin.git"
+                remote: "https://github.com/mkrzyzanowski/blog-001.git"
                 traits:
                 - "gitBranchDiscovery"
 jenkins:
   systemMessage: "Configuration as Code"                
 jobs:
   - script: >
-      pipelineJob('example') {
-       branchSources {
-        git {
-            id = 'configuration-as-code'
-            remote('https://github.com/jenkinsci/configuration-as-code-plugin.git')
-        }
-    }
-} 
+        multibranchPipelineJob('configuration-as-code') {
+        branchSources {
+                git {
+                id = 'configuration-as-code'
+                remote('https://github.com/mkrzyzanowski/blog-001.git')
+                }
+      }
+}
 tool:
   git:
     installations:
@@ -39,8 +39,6 @@ tool:
           installers:
           - maven:
               id: "3.6.3" 
-
-
 
 
 
