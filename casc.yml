@@ -1,3 +1,5 @@
+jenkins:
+  systemMessage: "Configuration as Code"
 jobs:
   - script: >
       pipelineJob('pipeline') {
