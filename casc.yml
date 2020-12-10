@@ -29,8 +29,20 @@ jobs:
                   }
               }
           }
-      }  
-
+      }                
+tool:
+  git:
+    installations:
+    - home: "git"
+      name: "Default"
+  maven:
+    installations:
+    - name: "M3"
+      properties:
+      - installSource:
+          installers:
+          - maven:
+              id: "3.6.3" 
 
 
 
