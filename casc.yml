@@ -14,15 +14,9 @@ unclassified:
                 remote: "https://github.com/mkrzyzanowski/blog-001.git"
                 traits:
                 - "gitBranchDiscovery"
-jobs:
-  - script: >
-        multibranchPipelineJob('configuration-as-code') {
-        branchSources {
-                git {
-                remote('https://github.com/jenkinsci/configuration-as-code-plugin.git')
-                }
-      }
-}         
+jenkins:
+  systemMessage: "Configuration as Code"                
+
 tool:
   git:
     installations:
