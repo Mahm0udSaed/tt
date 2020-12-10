@@ -25,7 +25,7 @@ unclassified:
           modernSCM:
             scm:
               git:
-                https://github.com/mkrzyzanowski/blog-001.git
+                remote: "https://github.com/mkrzyzanowski/blog-001.git"
                 traits:
                 - "gitBranchDiscovery"
 #                  - branchDiscoveryTrait:
