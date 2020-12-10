@@ -11,7 +11,7 @@ unclassified:
           modernSCM:
             scm:
               git:
-                remote: "https://github.com/mkrzyzanowski/blog-001.git"
+                remote: "https://github.com/jenkinsci/configuration-as-code-plugin.git"
                 traits:
                 - "gitBranchDiscovery"
 jenkins:
