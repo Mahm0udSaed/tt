@@ -21,7 +21,8 @@ jobs:
       multibranchPipelineJob('example') {
        branchSources {
         git {
-            remote('https://github.com/jenkinsci/job-dsl-plugin.git')
+            id = 'configuration-as-code'
+            remote('https://github.com/jenkinsci/configuration-as-code-plugin.git')
         }
     }
 } 
