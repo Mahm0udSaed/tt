@@ -13,17 +13,7 @@ unclassified:
               git:
                 remote: "https://github.com/mkrzyzanowski/blog-001.git"
                 traits:
-                - "gitBranchDiscovery"            
-jobs:
-  - script: >
-      multibranchPipelineJob('configuration-as-code') {
-        branchSources {
-                git {
-                id = 'configuration-as-code'
-                remote('https://github.com/mkrzyzanowski/blog-001.git')
-                }
-      }
-}  
+                - "gitBranchDiscovery"             
 tool:
   git:
     installations:
