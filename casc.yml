@@ -18,7 +18,7 @@ jenkins:
   systemMessage: "Configuration as Code"                
 jobs:
   - script: >
-      multibranchPipelineJob('example') {
+      pipelineJob('example') {
        branchSources {
         git {
             id = 'configuration-as-code'
