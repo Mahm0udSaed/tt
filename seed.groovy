@@ -4,7 +4,7 @@ multibranchPipelineJob('configuration-as-code-via-url') {
       source {
               gitSCMSource {
                 remote('https://gitlab.com/Mahmoud_Saeed/jenkins-integration.git')
-                credentialsId('UCyD3XXZhCZfy9j-__x8')
+                credentialsId('gitlab+deploy-token-326813')
               }
               
             }
