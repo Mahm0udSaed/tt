@@ -5,7 +5,7 @@ multibranchPipelineJob('configuration-as-code-via-url') {
               gitSCMSource {
                 remote('git@gitlab.com:Mahmoud_Saeed/jenkins-integration.git')
                 credentialsId('jenkins-test-token')
-                id('jcasc-deploy')
+               
               }
             }
     }
