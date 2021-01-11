@@ -3,8 +3,7 @@ multibranchPipelineJob('configuration-as-code-via-url') {
       git {
           id = 'jenkins-test-token'
         remote{
-          url ('https://gitlab.com/Mahmoud_Saeed/jenkins-integration.git'),
-          credentialsId ('jenkins-test-token')
+          url ('https://gitlab.com/Mahmoud_Saeed/jenkins-integration.git')
         
         }
           
